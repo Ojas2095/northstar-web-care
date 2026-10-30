@@ -1,0 +1,28 @@
+name: Northstar Automated Website Health Check
+
+# Free-tier scheduled probe running every 6 hours or on manual trigger
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Safe Synthetic HTTP Probes
+        run: node scripts/health_check.js
+
+      - name: Run Dead Link Verification Scan
+        run: node scripts/broken_link_checker.js
+
+      - name: Check Contract Renewals
+        run: node scripts/renewal_reminder.js
