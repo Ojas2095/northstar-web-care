@@ -40,27 +40,17 @@ This guide outlines how to deploy **Northstar Web Care** at zero software cost u
 
 ## 3. Vercel Deployment (Step-by-Step)
 
-### Option A: Via Vercel Web Dashboard (Recommended)
+### Option A: 1-Click Instant Import via Vercel Web Dashboard (Recommended)
 
-1. Navigate to [vercel.com](https://vercel.com) and log in with your GitHub account.
-2. Click **"Add New Project"** and select `northstar-web-care`.
-3. Vercel will automatically detect **Vite**:
-   - **Framework Preset:** Vite
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-   - **Install Command:** `npm install`
-4. Add Environment Variables (optional for initial deployment):
-   - `VITE_DEMO_MODE=true`
-   - `VITE_SITE_URL=https://<your-subdomain>.vercel.app`
-5. Click **Deploy**. Your site will be live across worldwide edge locations in under 45 seconds.
+1. Open this direct import link:
+   👉 **[Deploy on Vercel (Ojas2095/northstar-web-care)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FOjas2095%2Fnorthstar-web-care)**
+2. Click **Deploy**. Vercel will automatically build the Vite production bundle and assign your live `.vercel.app` URL.
 
-### Option B: Via Vercel CLI
+### Option B: Via Vercel CLI (Active Device Code)
 
-```bash
-npm install -g vercel
-vercel login
-vercel
-```
+Run `npx vercel` or approve the active device code:
+- **Authorization URL:** https://vercel.com/oauth/device?user_code=QFFQ-FBWX
+- Once confirmed in your browser, the CLI deploys automatically.
 
 ---
 
