@@ -4,17 +4,21 @@ This guide outlines how to deploy **Northstar Web Care** at zero software cost u
 
 ---
 
-## 1. Zero-Cost Infrastructure Architecture
+## 1. Live Deployment & Zero-Cost Architecture
+
+- **Production URL:** [https://northstar-web-care.vercel.app](https://northstar-web-care.vercel.app)
+- **Deployment Status:** Production Active (Vercel Global Edge Network)
+- **GitHub Repository:** [https://github.com/Ojas2095/northstar-web-care](https://github.com/Ojas2095/northstar-web-care)
 
 ```
-[ GitHub Repository ]
+[ GitHub Repository (Ojas2095/northstar-web-care) ]
         │
         ▼ (Auto Webhook on push to main)
 [ Vercel Free Tier (Global Edge CDN) ]
         │
         ├── SPA Client Routing (Vite static bundle)
         ├── Dynamic Client-Side Routing (vercel.json rewrite)
-        └── Fast SSL & Global Edge Caching
+        └── Fast SSL & Global Edge Caching (https://northstar-web-care.vercel.app)
 ```
 
 ---

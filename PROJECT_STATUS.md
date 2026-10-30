@@ -21,9 +21,10 @@ All 5 core project tracks have been fully built, rigorously compiled with TypeSc
 
 ## 2. Technical Verification Audit
 
+- **Live Production URL:** [https://northstar-web-care.vercel.app](https://northstar-web-care.vercel.app)
+- **Deployment Status:** Active & Healthy (HTTP 200 verified on Edge CDN)
 - **GitHub Repository Live:** [https://github.com/Ojas2095/northstar-web-care](https://github.com/Ojas2095/northstar-web-care)
-- **Vercel 1-Click Deployment:** [Deploy on Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FOjas2095%2Fnorthstar-web-care)
-- **Vercel CLI Device Code Pending:** https://vercel.com/oauth/device?user_code=QFFQ-FBWX
+- **CI/CD Integration:** Automated Vercel deployments active on pushes to `main` branch.
 - **TypeScript Compilation:** Passed with 0 errors (`npx tsc --noEmit`).
 - **Production Bundle:** Built successfully via Vite in 1.55 seconds (`npm run build`).
 - **Asset Minification & Chunking:** Clean route code-splitting generated in `dist/`.
